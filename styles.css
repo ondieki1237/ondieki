@@ -1,0 +1,25 @@
+table
+{
+    width: 800px;
+    text-align: left;
+    border-collapse: collapse;
+    border-radius: 30px;
+}
+table th{
+    text-align: centre;
+    background-color: darkcyan;
+}
+table td{
+    text-align: center;
+}
+table tr:nth-child(odd) td{
+    background-color: #e7edf0;
+}
+.zuri {
+    counter-reset: serial-number;  /* Set the serial number counter to 0 */
+  }
+  
+  .zuri td:first-child:before {
+    counter-increment: serial-number;  /* Increment the serial number counter */
+    content: counter(serial-number);  /* Display the counter */
+  }

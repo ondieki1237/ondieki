@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles.css">
+<head><h1>A table for St. Benedict high school Mr Ade, class Teacher of SS2</h1></head>
+<body>
+
+    <table border="1" class="zuri"> 
+        <thead>
+            <tr class="tableth">
+                <th class="serial">Automatic Serial number</th>
+                <th class="name">NAME:</th>
+                <th class="math">Mathematics:</th>
+                <th class="english">English:</th>
+                <th class="phyc">Physics:</th>
+                <th class="chem">Chemistry:</th>
+                <th class="bio">Biology:</th>
+                <th class="sum">SUM:</th>     
+            </tr>
+        </thead>
+        <tr>
+            <td></td>
+            <td>AdeKunle</td>
+            <td>72</td>
+            <td>43</td>
+            <td>78</td>
+            <td>73</td>
+            <td>37</td>
+            <td>303</td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td>John</td>
+            <td>42</td>
+            <td>64</td>
+            <td>70</td>
+            <td>55</td>
+            <td>58</td>
+            <td>289</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Peter</td>
+            <td>62</td>
+            <td>40</td>
+            <td>73</td>
+            <td>75</td>
+            <td>99</td>
+            <td>349</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Rukayat</td>
+            <td>77</td>
+            <td>75</td>
+            <td>78</td>
+            <td>75</td>
+            <td>75</td>
+            <td>380</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Paul</td>
+            <td>72</td>
+            <td>40</td>
+            <td>72</td>
+            <td>70</td>
+            <td>97</td>
+            <td>351</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Victor</td>
+            <td>76</td>
+            <td>64</td>
+            <td>48</td>
+            <td>99</td>
+            <td>37</td>
+            <td>324</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>John</td>
+            <td>62</td>
+            <td>54</td>
+            <td>78</td>
+            <td>75</td>
+            <td>64</td>
+            <td>333</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Doe</td>
+            <td>52</td>
+            <td>84</td>
+            <td>48</td>
+            <td>85</td>
+            <td>27</td>
+            <td>296</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Stephen</td>
+            <td>92</td>
+            <td>44</td>
+            <td>78</td>
+            <td>65</td>
+            <td>61</td>
+            <td>340</td>
+        </tr>
+    </table>
+    <span id="val"></span>
+        
+    <script>
+        
+        var table = document.getElementById("table"), sumVal = 0;
+        
+        for(var i = 1; i < table.rows.length; i++)
+        {
+            sumVal = sumVal + parseInt(table.column[i].cells[2].innerHTML);
+        }
+        
+        document.getElementById("val").innerHTML = "Sum Value = " + sumVal;
+        console.log(sumVal);
+        
+    </script>
+</body>
+</html>
